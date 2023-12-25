@@ -1,12 +1,8 @@
 body {
   margin: 0;
-  background-image: va;
-}
-
-img.BMW_backround {
-  width: auto;
-  object-fit: cover;
-  background-image: url(.BMW_backround);
+  background-image: url(files/HD-wallpaper-bmw-m5-f90.jpg);
+  background-size: 100%;
+  height: 100%;
 }
 
 div.Main_Container {
