@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  background-image: va;
+}
+
+img.BMW_backround {
+  width: auto;
+  object-fit: cover;
+  background-image: url(.BMW_backround);
+}
+
+div.Main_Container {
+  margin: 15px 15px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (min-width: 680px) {
+  div.Main_Container {
+    margin: 30px 15px;
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+div.to_do {
+  background-color: lightgray;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+div.in_progress {
+  background-color: lightgray;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+div.stuck {
+  background-color: lightgray;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+div.done {
+  background-color: lightgray;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+@media (min-width: 680px) {
+  div.to_do {
+    flex: 1;
+  }
+  div.in_progress {
+    flex: 1;
+  }
+  div.stuck {
+    flex: 1;
+  }
+  div.done {
+    flex: 1;
+  }
+}
+
+div.tittle {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 900;
+}
+
+div.add_card {
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.add_card:hover {
+  background-color: grey;
+}
