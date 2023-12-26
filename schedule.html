@@ -13,28 +13,88 @@
     <div class="Main_Container">
       <div class="to_do">
         <div class="tittle">To do</div>
-        <div class="add_card">
+        <div onclick="addCard()" class="add_card">
           <text>+ Add card</text>
         </div>
       </div>
       <div class="in_progress">
         <div class="tittle">In progress</div>
-        <div class="add_card">
+        <div onclick="addCard()" class="add_card">
           <text>+ Add card</text>
         </div>
       </div>
       <div class="stuck">
         <div class="tittle">Stuck</div>
-        <div class="add_card">
+        <div onclick="addCard()" class="add_card">
           <text>+ Add card</text>
         </div>
       </div>
       <div class="done">
         <div class="tittle">Done</div>
-        <div class="add_card">
+        <div onclick="addCard()" class="add_card">
           <text>+ Add card</text>
         </div>
       </div>
     </div>
+    <div id="CreateModal" class="Modal">
+      <div class="Modalbackround" onclick="hideModal()"></div>
+      <div class="ModalContent">
+        <h1 class="add">Add task</h1>
+        <h2 class="input_tittle">Tittle</h2>
+        <input class="Modal" type="text" />
+        <h2 class="input_tittle">Description</h2>
+        <input class="Modal" style="height: calc(15px * 4)" type="text" />
+        <h2 class="input_tittle">Status</h2>
+        <select
+          style="width: 100%; border-radius: 10px; border: 1px solid black"
+        >
+          <option id="Modal" value="">To do</option>
+          <option id="Modal" value="">In progress</option>
+          <option id="Modal" value="">Stuck</option>
+          <option id="Modal" value="">Done</option>
+        </select>
+        <h2 class="input_tittle">Priority</h2>
+        <select
+          style="width: 100%; border-radius: 10px; border: 1px solid black"
+        >
+          <option id="Modal" value="">High</option>
+          <option id="Modal" value="">Medium</option>
+          <option id="Modal" value="">Low</option>
+        </select>
+        <button
+          style="
+            margin-top: 20px;
+            width: 100%;
+            background-color: black;
+            border: 1px solid black;
+            border-radius: 5px;
+            color: white;
+            font-family: Roboto Condensed, sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+          "
+        >
+          Add task
+        </button>
+        <button
+          onclick="hideModal()"
+          ;
+          style="
+            margin-top: 20px;
+            width: 100%;
+            background-color: red;
+            border: 1px solid red;
+            border-radius: 5px;
+            color: black;
+            font-family: Roboto Condensed, sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+          "
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+    <script src="./schedule.js"></script>
   </body>
 </html>
