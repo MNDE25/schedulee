@@ -13,25 +13,25 @@
     <div class="Main_Container">
       <div class="to_do">
         <div class="tittle">To do</div>
-        <div onclick="addCard()" class="add_card">
+        <div onclick="addCardMenu()" class="add_card">
           <text>+ Add card</text>
         </div>
       </div>
       <div class="in_progress">
         <div class="tittle">In progress</div>
-        <div onclick="addCard()" class="add_card">
+        <div onclick="addCardMenu()" class="add_card">
           <text>+ Add card</text>
         </div>
       </div>
       <div class="stuck">
         <div class="tittle">Stuck</div>
-        <div onclick="addCard()" class="add_card">
+        <div onclick="addCardMenu()" class="add_card">
           <text>+ Add card</text>
         </div>
       </div>
       <div class="done">
         <div class="tittle">Done</div>
-        <div onclick="addCard()" class="add_card">
+        <div onclick="addCardMenu()" class="add_card">
           <text>+ Add card</text>
         </div>
       </div>
@@ -41,27 +41,35 @@
       <div class="ModalContent">
         <h1 class="add">Add task</h1>
         <h2 class="input_tittle">Tittle</h2>
-        <input class="Modal" type="text" />
+        <input id="addCardMenuTittle" class="Modal" type="text" />
         <h2 class="input_tittle">Description</h2>
-        <input class="Modal" style="height: calc(15px * 4)" type="text" />
+        <input
+          id="addCardMenuDesc"
+          class="Modal"
+          style="height: calc(15px * 4)"
+          type="text"
+        />
         <h2 class="input_tittle">Status</h2>
         <select
+          id="addCardMenuStats"
           style="width: 100%; border-radius: 10px; border: 1px solid black"
         >
-          <option id="Modal" value="">To do</option>
-          <option id="Modal" value="">In progress</option>
-          <option id="Modal" value="">Stuck</option>
-          <option id="Modal" value="">Done</option>
+          <option id="Modal" value="To do">To do</option>
+          <option id="Modal" value="In progress">In progress</option>
+          <option id="Modal" value="Stuck">Stuck</option>
+          <option id="Modal" value="Done">Done</option>
         </select>
         <h2 class="input_tittle">Priority</h2>
         <select
+          id="addCardMenuPrior"
           style="width: 100%; border-radius: 10px; border: 1px solid black"
         >
-          <option id="Modal" value="">High</option>
-          <option id="Modal" value="">Medium</option>
-          <option id="Modal" value="">Low</option>
+          <option id="Modal" value="High">High</option>
+          <option id="Modal" value="Medium">Medium</option>
+          <option id="Modal" value="Low">Low</option>
         </select>
         <button
+          onclick="getValues()"
           style="
             margin-top: 20px;
             width: 100%;
