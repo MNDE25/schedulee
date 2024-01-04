@@ -13,25 +13,29 @@
     <div class="Main_Container">
       <div class="to_do">
         <div class="tittle">To do</div>
-        <div onclick="addCardMenu()" class="add_card">
+        <div id="todoTasks"></div>
+        <div onclick="addCardMenu('todoTasks')" class="add_card">
           <text>+ Add card</text>
         </div>
       </div>
       <div class="in_progress">
         <div class="tittle">In progress</div>
-        <div onclick="addCardMenu()" class="add_card">
+        <div id="inProgressTasks"></div>
+        <div onclick="addCardMenu('inProgressTasks')" class="add_card">
           <text>+ Add card</text>
         </div>
       </div>
       <div class="stuck">
         <div class="tittle">Stuck</div>
-        <div onclick="addCardMenu()" class="add_card">
+        <div id="stuckTasks"></div>
+        <div onclick="addCardMenu('stuckTasks')" class="add_card">
           <text>+ Add card</text>
         </div>
       </div>
       <div class="done">
         <div class="tittle">Done</div>
-        <div onclick="addCardMenu()" class="add_card">
+        <div id="doneTasks"></div>
+        <div onclick="addCardMenu('doneTasks')" class="add_card">
           <text>+ Add card</text>
         </div>
       </div>
