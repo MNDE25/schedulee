@@ -19,7 +19,7 @@ const tittleInput = document.getElementById("addCardMenuTittle").value;
 const describInput = document.getElementById("addCardMenuDesc").value;
 const statsSelect = document.getElementById("addCardMenuStats").value;
 const priorSelect = document.getElementById("addCardMenuPrior").value;
-todoTasks.push( { tittleInput, describInput, statsSelect, priorSelect });
+todoTasks.push( { tittleInput, describInput, statsSelect, priorSelect } );
 resetValues();
 }
 
