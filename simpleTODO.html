@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <head>
+        <style>
+            html {
+                background-color: black;
+            }
+            div.list {
+                max-width: 600px;
+                margin: 0 auto;
+                background-color: bisque;
+                padding: 5px;
+            }
+            h2 {
+                margin-top: 0;
+                margin-bottom: 10px;
+                background-color: antiquewhite;
+            }
+            div.tasks {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                background-color: azure;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                border-radius: 15px;
+            }
+
+            div.task {
+                background-color: orange;
+                border-radius: 15px;
+            }
+            
+        </style>
+    </head>
+<body>
+    <div class="list">
+        <h2>Do it</h2>
+        <div class="tasks" id="taskElement">
+            <!--generated-->
+        </div>
+        <button class="add" onclick="">Add task</button>
+    </div>
+    <script>
+        const tasks = [{ name: "shal ugaah" }, { name: "toos archih" }];
+        let taskHTML = `<div class="task">${tasks[0].name}</div>
+                        <div class="task">${tasks[1].name}</div>`;
+        document.getElementById("taskElement").innerHTML = taskHTML;
+    </script>
+</body>
+
+</html>
